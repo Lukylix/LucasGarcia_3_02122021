@@ -18,20 +18,26 @@
 		</div>
 
 		<header>
-			<div>
+			<div class="title__container">
 				<!-- <img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood" /> -->
 				<h1 class="logo">ohmyfood</h1>
 			</div>
-			<form>
-				<div>
-					<i class="fas fa-map-marker-alt"></i>
-					<input type="text" id="recherche" name="recherche" placeholder="Paris, Belleville" />
+			<form class="form-header">
+				<div class="research-bar">
+					<i class="research-bar__icon fas fa-map-marker-alt"></i>
+					<input
+						class="research-bar__input"
+						type="text"
+						id="recherche"
+						name="recherche"
+						placeholder="Paris, Belleville"
+					/>
 				</div>
-				<div>
+				<div class="form-header__headline">
 					<h2>Réserver le menu qui vous convient</h2>
 					<p>Découvrez des restaurants d'exception, selectionés par nos soins.</p>
 					<!-- <button aria-label="Explorer nos restaurants">Explorer nos restaurants</button> -->
-					<input type="submit" value="Explorer nos restaurants" />
+					<input class="button" type="submit" value="Explorer nos restaurants" />
 				</div>
 			</form>
 		</header>

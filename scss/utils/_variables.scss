@@ -1,5 +1,15 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
+$dark-grey: #353535;
+$medium-grey: #eaeaea;
+$light-grey: #f6f6f6;
 
-$background-color-footer: #353535;
+$background-color-footer: $dark-grey;
+$background-color-research-bar: $medium-grey;
+$background-color-header__headline: $light-grey;
+
+$color-research-bar: $dark-grey;
+$color-headline-p: $dark-grey;
+
+$gradient-button: linear-gradient($color-secondary, $color-primary);
