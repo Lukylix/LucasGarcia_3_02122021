@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+		<title>À la française</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+				<!-- <img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood" /> -->
+				<h1>ohmyfood</h1>
+			</nav>
+		</header>
+		<main>
+			<header>
+				<img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant à la française" />
+				<div>
+					<h2>À la française</h2>
+					<i class="far fa-heart"></i>
+				</div>
+			</header>
+			<form>
+				<fieldset>
+					<legend>Entrées</legend>
+
+					<input type="radio" id="entree1" name="entree" checked />
+					<label class="label" for="entree1">
+						<span class="label__legend">
+							<span class="label__legend__title">Tartare de poulpe acidulé</span>
+							<span class="label__legend__info">Aux zestes d'orange</span>
+							<span class="label__legend__price">25€</span>
+						</span>
+
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="entree2" name="entree" />
+					<label class="label" for="entree2">
+						<span class="label__legend">
+							<span class="label__legend__title">Velouté de légumes d'antan</span>
+							<span class="label__legend__info">Carotte, panais, topinambour</span>
+							<span class="label__legend__price">35€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="entree3" name="entree" />
+					<label class="label" for="entree3">
+						<span class="label__legend">
+							<span class="label__legend__title">Soupe à l'oignon</span>
+							<span class="label__legend__info">Revisitée</span>
+							<span class="label__legend__price">20€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Plats</legend>
+
+					<input type="radio" id="plat1" name="plat" />
+					<label class="label" for="plat1">
+						<span class="label__legend">
+							<span class="label__legend__title">Coquilles Saint-Jacques</span>
+							<span class="label__legend__info">Accompagnées d'une purée de panais</span>
+							<span class="label__legend__price">40€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="plat2" name="plat" />
+					<label class="label" for="plat2">
+						<span class="label__legend">
+							<span class="label__legend__title">Magret de canard</span>
+							<span class="label__legend__info">Et parmentier de pommes de terre</span>
+							<span class="label__legend__price">35€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="plat3" name="plat" />
+					<label class="label" for="plat3">
+						<span class="label__legend">
+							<span class="label__legend__title">Pigeonneau d’Ille-et-Vilaine</span>
+							<span class="label__legend__info">Sur son lit de gnocchis aux légumes</span>
+							<span class="label__legend__price">44€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Desserts</legend>
+
+					<input type="radio" id="dessert1" name="dessert" />
+					<label class="label" for="dessert1">
+						<span class="label__legend">
+							<span class="label__legend__title">Pétales de violettes glacés</span>
+							<span class="label__legend__info">Et purée de noisettes</span>
+							<span class="label__legend__price">18€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="dessert2" name="dessert" />
+					<label class="label" for="dessert2">
+						<span class="label__legend">
+							<span class="label__legend__title">Fondant au chocolat</span>
+							<span class="label__legend__info">Revisité</span>
+							<span class="label__legend__price">22€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="dessert3" name="dessert" />
+					<label class="label" for="dessert3">
+						<span class="label__legend">
+							<span class="label__legend__title">Millefeuille croustillant</span>
+							<span class="label__legend__info">Myrtilles et pâte d’amande</span>
+							<span class="label__legend__price">23€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+				</fieldset>
+				<!-- <button>Commander</button> -->
+				<input type="submit" value="Commander" />
+			</form>
+		</main>
+		<footer>
+			<img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
+			<ul>
+				<li>
+					<a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+				</li>
+				<li><a href="#">Mentions légales</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
