@@ -1,0 +1,59 @@
+.restaurant {
+	display: grid;
+	grid-template: auto repeat(4, 250px) / auto;
+	gap: 20px;
+	padding: 50px 20px;
+	background-color: $background-color-restaurant;
+	&__title {
+		font-size: 1.5rem;
+	}
+	&__item {
+		display: block;
+		border-radius: 20px;
+		overflow: hidden;
+		background-color: white;
+		box-shadow: 0 0 7px -3px rgb(44, 44, 44);
+	}
+	&__figure {
+		height: 100%;
+		img {
+			height: calc(100% - 75px);
+		}
+	}
+	&__figcaption {
+		height: 75px;
+		padding: 10px;
+		position: relative;
+	}
+	&__heart {
+		font-size: 25px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translatey(-50%);
+		i {
+			position: absolute;
+			right: 0px;
+			top: 50%;
+			transform: translatey(-50%);
+		}
+		i:nth-child(2) {
+			display: none;
+			&::before {
+				background: linear-gradient(45deg, #d579d5, #9356dc);
+				background-clip: text;
+				-webkit-background-clip: text;
+				color: transparent;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		&:hover {
+			i:nth-child(1) {
+				display: none;
+			}
+			i:nth-child(2) {
+				display: inline-block;
+			}
+		}
+	}
+}

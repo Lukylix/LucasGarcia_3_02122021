@@ -81,7 +81,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -189,11 +189,127 @@ body {
   font-weight: inherit;
 }
 
+.fonctionement {
+  padding: 50px 20px;
+}
+.fonctionement__title {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.fonctionement__grid {
+  display: grid;
+  grid-template: repeat(3, 80px)/auto;
+  gap: 20px;
+}
+.fonctionement__item {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  border-radius: 25px;
+  font-weight: 600;
+  background-color: #f6f6f6;
+  box-shadow: 0px 2px 19px -2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.fonctionement__item i {
+  width: 20px;
+  margin: 0 20px 0 25px;
+  text-align: center;
+  color: #7e7e7e;
+}
+.fonctionement__item::before {
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #9356dc;
+}
+.fonctionement__item:nth-child(1)::before {
+  content: "1";
+}
+.fonctionement__item:nth-child(2)::before {
+  content: "2";
+}
+.fonctionement__item:nth-child(3)::before {
+  content: "3";
+}
+.fonctionement__item:nth-child(3) {
+  background-color: #f5edff;
+}
+.fonctionement__item:nth-child(3) i {
+  color: #9356dc;
+}
+
+.restaurant {
+  display: grid;
+  grid-template: auto repeat(4, 250px)/auto;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #f6f6f6;
+}
+.restaurant__title {
+  font-size: 1.5rem;
+}
+.restaurant__item {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 7px -3px #2c2c2c;
+}
+.restaurant__figure {
+  height: 100%;
+}
+.restaurant__figure img {
+  height: calc(100% - 75px);
+}
+.restaurant__figcaption {
+  height: 75px;
+  padding: 10px;
+  position: relative;
+}
+.restaurant__heart {
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translatey(-50%);
+}
+.restaurant__heart i {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translatey(-50%);
+}
+.restaurant__heart i:nth-child(2) {
+  display: none;
+}
+.restaurant__heart i:nth-child(2)::before {
+  background: linear-gradient(45deg, #d579d5, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__heart:hover i:nth-child(1) {
+  display: none;
+}
+.restaurant__heart:hover i:nth-child(2) {
+  display: inline-block;
+}
+
 footer {
   background-color: #353535;
   color: white;
   padding: 20px;
-  margin-top: 50px;
 }
 footer .logo {
   padding: 10px 0;

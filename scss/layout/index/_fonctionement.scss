@@ -1,0 +1,60 @@
+.fonctionement {
+	padding: 50px 20px;
+	&__title {
+		font-size: 1.5rem;
+		margin-bottom: 30px;
+	}
+	&__grid {
+		display: grid;
+		grid-template: repeat(3, 80px) / auto;
+		gap: 20px;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-left: 12px;
+		border-radius: 25px;
+		font-weight: 600;
+		background-color: $background-color-fonctionement__item;
+		box-shadow: 0px 2px 19px -2px rgb(0 0 0 / 20%);
+		position: relative;
+		i {
+			width: 20px;
+			margin: 0 20px 0 25px;
+			text-align: center;
+			color: $color-fonctionement__item;
+		}
+		&::before {
+			position: absolute;
+			left: -12px;
+			top: 50%;
+			transform: translatey(-50%);
+
+			width: 25px;
+			height: 25px;
+			line-height: 25px;
+			text-align: center;
+
+			border-radius: 50%;
+			font-weight: normal;
+			font-size: 0.9rem;
+			color: white;
+			background-color: $color-primary;
+		}
+		&:nth-child(1)::before {
+			content: "1";
+		}
+		&:nth-child(2)::before {
+			content: "2";
+		}
+		&:nth-child(3)::before {
+			content: "3";
+		}
+		&:nth-child(3) {
+			background-color: $background-color-fonctionement__item--last;
+			i {
+				color: $color-primary;
+			}
+		}
+	}
+}
