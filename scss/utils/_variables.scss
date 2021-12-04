@@ -7,7 +7,7 @@ $light-grey: #f6f6f6;
 
 $background-color-footer: $dark-grey;
 $background-color-research-bar: $medium-grey;
-$background-color-header__headline: $light-grey;
+$background-color-form-header: $light-grey;
 $background-color-fonctionement__item: $light-grey;
 $background-color-fonctionement__item--last: #f5edff;
 $background-color-restaurant: $light-grey;
@@ -17,3 +17,4 @@ $color-headline-p: $dark-grey;
 $color-fonctionement__item: #7e7e7e;
 
 $gradient-button: linear-gradient(175deg, $color-secondary, $color-primary);
+$gradient-button--hover: linear-gradient(175deg, lighten($color-secondary, 5), lighten($color-primary, 5));

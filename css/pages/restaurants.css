@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  position: relative;
 }
 
 /* Remove default margin */
@@ -65,6 +66,11 @@ select {
   padding: 0;
 }
 
+input[type=submit],
+button {
+  cursor: pointer;
+}
+
 :root {
   font-size: 16px;
 }
@@ -77,6 +83,68 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
+.button {
+  display: block;
+  margin: 30px auto 0px;
+  padding: 15px 30px;
+  border: 0px;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(175deg, #ff79da, #9356dc);
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.65);
+}
+.button:hover {
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
+}
+
+.hearts {
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hearts i {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hearts i:nth-child(2) {
+  display: none;
+}
+.hearts i:nth-child(2)::before {
+  background: linear-gradient(45deg, #d579d5, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.hearts:hover i:nth-child(2) {
+  display: block;
+  animation: fill-heart 0.3s;
+}
+.hearts:hover i:nth-child(1) {
+  animation: opacity-fade 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fill-heart {
+  from {
+    transform: scale(0, 0) translateY(-125%);
+  }
+  to {
+    transform: scale(1, 1) translateY(-50%);
+  }
+}
+@keyframes opacity-fade {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -85,6 +153,7 @@ footer {
 footer .logo {
   padding: 10px 0;
   font-size: 1.2rem;
+  font-weight: normal;
 }
 footer li {
   margin: 5px 0;

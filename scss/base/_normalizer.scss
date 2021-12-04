@@ -3,6 +3,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	position: relative;
 }
 
 /* Remove default margin */
@@ -63,4 +64,9 @@ textarea,
 select {
 	font: inherit;
 	padding: 0;
+}
+
+input[type="submit"],
+button {
+	cursor: pointer;
 }

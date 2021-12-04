@@ -23,37 +23,5 @@
 	&__figcaption {
 		height: 75px;
 		padding: 10px;
-		position: relative;
-	}
-	&__heart {
-		font-size: 25px;
-		position: absolute;
-		right: 20px;
-		top: 50%;
-		transform: translatey(-50%);
-		i {
-			position: absolute;
-			right: 0px;
-			top: 50%;
-			transform: translatey(-50%);
-		}
-		i:nth-child(2) {
-			display: none;
-			&::before {
-				background: linear-gradient(45deg, #d579d5, #9356dc);
-				background-clip: text;
-				-webkit-background-clip: text;
-				color: transparent;
-				-webkit-text-fill-color: transparent;
-			}
-		}
-		&:hover {
-			i:nth-child(1) {
-				display: none;
-			}
-			i:nth-child(2) {
-				display: inline-block;
-			}
-		}
 	}
 }
