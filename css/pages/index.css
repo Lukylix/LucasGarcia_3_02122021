@@ -83,6 +83,10 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
+.restaurant-name {
+  font-family: "Shrikhand", cursive;
+}
+
 .loader {
   height: 100vh;
   width: 100vw;

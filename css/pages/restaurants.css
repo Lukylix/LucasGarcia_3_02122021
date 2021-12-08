@@ -83,6 +83,10 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
+.restaurant-name {
+  font-family: "Shrikhand", cursive;
+}
+
 .button {
   display: block;
   margin: 30px auto 0px;
@@ -145,6 +149,206 @@ body {
     opacity: 0;
   }
 }
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+.nav .logo {
+  font-size: 2em;
+}
+.nav a {
+  position: absolute;
+  left: 20px;
+  font-size: 1.3rem;
+}
+
+.main-header img {
+  margin-bottom: -40px;
+}
+.main-header__container {
+  padding: 30px 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f6f6f6;
+}
+.main-header__container h2 {
+  font-size: 1.7rem;
+}
+.main-header__container .hearts {
+  right: 40px;
+}
+
+form {
+  background-color: #f6f6f6;
+  padding: 0px 15px 70px 15px;
+}
+form .button {
+  padding: 15px 55px;
+}
+
+.label__title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.label__title,
+.label__info,
+.label__price {
+  display: block;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+fieldset legend {
+  padding-bottom: 6px;
+  position: relative;
+  margin-left: 5px;
+  margin: 15px 0 0 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+fieldset legend::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 40px;
+  background-color: #99e2d0;
+  content: "";
+}
+
+input[type=radio] {
+  display: none;
+}
+input[type=radio] + .label {
+  display: flex;
+  height: 70px;
+  margin: 15px 0;
+  background-color: white;
+  box-shadow: 0 0 7px -3px #2c2c2c;
+  border-radius: 15px;
+  overflow: hidden;
+  animation-duration: 0.5s;
+  animation-name: fadein;
+  animation-fill-mode: backwards;
+}
+input[type=radio] + .label:last-child {
+  margin-bottom: 40px;
+}
+input[type=radio] + .label .label__legend {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+input[type=radio] + .label .label__price {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-weight: bolder;
+}
+input[type=radio] + .label .label__info {
+  position: absolute;
+  bottom: 10px;
+}
+input[type=radio] + .label .label__check {
+  display: flex;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-right: -60px;
+  background-color: #99e2d0;
+  color: white;
+  animation-duration: 0.5s;
+  animation-name: slide-reverse;
+}
+input[type=radio] + .label .label__check i {
+  font-size: 1.2rem;
+  animation-name: rotate-icon-reverse;
+  animation-duration: 0.5s;
+}
+input[type=radio]:checked + .label .label__check {
+  margin-right: 0px;
+  animation-duration: 0.5s;
+  animation-name: slide;
+}
+input[type=radio]:checked + .label .label__check i {
+  animation-name: rotate-icon;
+  animation-duration: 0.5s;
+  transform: rotate(0deg);
+}
+
+@keyframes slide {
+  from {
+    margin-right: -60px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes slide-reverse {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -60px;
+  }
+}
+@keyframes rotate-icon {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-icon-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.delay-1 {
+  animation-delay: 0.15s;
+}
+.delay-2 {
+  animation-delay: 0.3s;
+}
+.delay-3 {
+  animation-delay: 0.45s;
+}
+.delay-4 {
+  animation-delay: 0.6s;
+}
+.delay-5 {
+  animation-delay: 0.75s;
+}
+.delay-6 {
+  animation-delay: 0.9s;
+}
+.delay-7 {
+  animation-delay: 1.05s;
+}
+.delay-8 {
+  animation-delay: 1.2s;
+}
+
 footer {
   background-color: #353535;
   color: white;

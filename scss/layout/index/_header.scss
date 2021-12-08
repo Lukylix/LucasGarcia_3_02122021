@@ -1,7 +1,5 @@
 .logo--title {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center;
 	height: 75px;
 	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 	z-index: 1;
@@ -22,9 +20,7 @@
 }
 
 .research-bar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center;
 	height: 60px;
 	background-color: $background-color-research-bar;
 	color: $color-research-bar;

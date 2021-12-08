@@ -6,9 +6,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center;
 	background: white;
 	animation: loader 0.01s;
 	animation-delay: 1s;

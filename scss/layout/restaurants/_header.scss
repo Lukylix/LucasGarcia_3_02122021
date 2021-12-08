@@ -1,0 +1,30 @@
+.nav {
+	@include flex-center;
+	height: 75px;
+	.logo {
+		font-size: 2em;
+	}
+	a {
+		position: absolute;
+		left: 20px;
+		font-size: 1.3rem;
+	}
+}
+
+.main-header {
+	img {
+		margin-bottom: -40px;
+	}
+	&__container {
+		padding: 30px 20px;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		background-color: $background-color-main-restaurant;
+		h2 {
+			font-size: 1.7rem;
+		}
+		.hearts {
+			right: 40px;
+		}
+	}
+}

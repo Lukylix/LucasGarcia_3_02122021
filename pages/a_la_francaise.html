@@ -12,25 +12,27 @@
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav class="nav">
 				<a href="../index.html"><i class="fas fa-arrow-left"></i></a>
-				<!-- <img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood" /> -->
 				<h1 class="logo">ohmyfood</h1>
 			</nav>
 		</header>
 		<main>
-			<header>
+			<header class="main-header">
 				<img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant à la française" />
-				<div>
-					<h2>À la française</h2>
-					<i class="far fa-heart"></i>
+				<div class="main-header__container">
+					<h2 class="restaurant-name">À la française</h2>
+					<div class="hearts">
+						<i class="far fa-heart"></i>
+						<i class="fas fa-heart"></i>
+					</div>
 				</div>
 			</header>
 			<form>
 				<fieldset>
 					<legend>Entrées</legend>
 
-					<input type="radio" id="entree1" name="entree" checked />
+					<input type="radio" id="entree1" name="entree" />
 					<label class="label" for="entree1">
 						<span class="label__legend">
 							<span class="label__title">Tartare de poulpe acidulé</span>
@@ -44,7 +46,7 @@
 					</label>
 
 					<input type="radio" id="entree2" name="entree" />
-					<label class="label" for="entree2">
+					<label class="label delay-1" for="entree2">
 						<span class="label__legend">
 							<span class="label__title">Velouté de légumes d'antan</span>
 							<span class="label__info">Carotte, panais, topinambour</span>
@@ -56,7 +58,7 @@
 					</label>
 
 					<input type="radio" id="entree3" name="entree" />
-					<label class="label" for="entree3">
+					<label class="label delay-2" for="entree3">
 						<span class="label__legend">
 							<span class="label__title">Soupe à l'oignon</span>
 							<span class="label__info">Revisitée</span>
@@ -71,7 +73,7 @@
 					<legend>Plats</legend>
 
 					<input type="radio" id="plat1" name="plat" />
-					<label class="label" for="plat1">
+					<label class="label delay-3" for="plat1">
 						<span class="label__legend">
 							<span class="label__title">Coquilles Saint-Jacques</span>
 							<span class="label__info">Accompagnées d'une purée de panais</span>
@@ -83,7 +85,7 @@
 					</label>
 
 					<input type="radio" id="plat2" name="plat" />
-					<label class="label" for="plat2">
+					<label class="label delay-4" for="plat2">
 						<span class="label__legend">
 							<span class="label__title">Magret de canard</span>
 							<span class="label__info">Et parmentier de pommes de terre</span>
@@ -95,7 +97,7 @@
 					</label>
 
 					<input type="radio" id="plat3" name="plat" />
-					<label class="label" for="plat3">
+					<label class="label delay-5" for="plat3">
 						<span class="label__legend">
 							<span class="label__title">Pigeonneau d’Ille-et-Vilaine</span>
 							<span class="label__info">Sur son lit de gnocchis aux légumes</span>
@@ -110,7 +112,7 @@
 					<legend>Desserts</legend>
 
 					<input type="radio" id="dessert1" name="dessert" />
-					<label class="label" for="dessert1">
+					<label class="label delay-6" for="dessert1">
 						<span class="label__legend">
 							<span class="label__title">Pétales de violettes glacés</span>
 							<span class="label__info">Et purée de noisettes</span>
@@ -122,7 +124,7 @@
 					</label>
 
 					<input type="radio" id="dessert2" name="dessert" />
-					<label class="label" for="dessert2">
+					<label class="label delay-7" for="dessert2">
 						<span class="label__legend">
 							<span class="label__title">Fondant au chocolat</span>
 							<span class="label__info">Revisité</span>
@@ -134,7 +136,7 @@
 					</label>
 
 					<input type="radio" id="dessert3" name="dessert" />
-					<label class="label" for="dessert3">
+					<label class="label delay-8" for="dessert3">
 						<span class="label__legend">
 							<span class="label__title">Millefeuille croustillant</span>
 							<span class="label__info">Myrtilles et pâte d’amande</span>
