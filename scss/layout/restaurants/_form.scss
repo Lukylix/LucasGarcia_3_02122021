@@ -9,6 +9,7 @@ form {
 .label__title {
 	font-size: 1.1rem;
 	font-weight: bold;
+	padding-bottom: 25px;
 }
 
 .label__title,
@@ -44,7 +45,7 @@ input[type="radio"] {
 	display: none;
 	+ .label {
 		display: flex;
-		height: 70px;
+		// height: 70px;
 		margin: 15px 0;
 		background-color: white;
 		box-shadow: 0 0 7px -3px rgb(44, 44, 44);
@@ -57,7 +58,6 @@ input[type="radio"] {
 			margin-bottom: 40px;
 		}
 		.label__legend {
-			position: relative;
 			width: 100%;
 			padding: 10px;
 		}
@@ -70,6 +70,10 @@ input[type="radio"] {
 		.label__info {
 			position: absolute;
 			bottom: 10px;
+			width: calc(100% - 50px);
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 		.label__check {
 			display: flex;
@@ -170,5 +174,8 @@ input[type="radio"] {
 	}
 	&-8 {
 		animation-delay: 1.2s;
+	}
+	&-9 {
+		animation-delay: 1.35s;
 	}
 }

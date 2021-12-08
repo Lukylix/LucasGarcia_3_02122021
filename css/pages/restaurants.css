@@ -166,6 +166,7 @@ body {
 
 .main-header img {
   margin-bottom: -40px;
+  max-height: 270px;
 }
 .main-header__container {
   padding: 30px 20px;
@@ -175,6 +176,7 @@ body {
 }
 .main-header__container h2 {
   font-size: 1.7rem;
+  width: calc(100% - 50px);
 }
 .main-header__container .hearts {
   right: 40px;
@@ -191,6 +193,7 @@ form .button {
 .label__title {
   font-size: 1.1rem;
   font-weight: bold;
+  padding-bottom: 25px;
 }
 
 .label__title,
@@ -227,7 +230,6 @@ input[type=radio] {
 }
 input[type=radio] + .label {
   display: flex;
-  height: 70px;
   margin: 15px 0;
   background-color: white;
   box-shadow: 0 0 7px -3px #2c2c2c;
@@ -241,7 +243,6 @@ input[type=radio] + .label:last-child {
   margin-bottom: 40px;
 }
 input[type=radio] + .label .label__legend {
-  position: relative;
   width: 100%;
   padding: 10px;
 }
@@ -254,6 +255,10 @@ input[type=radio] + .label .label__price {
 input[type=radio] + .label .label__info {
   position: absolute;
   bottom: 10px;
+  width: calc(100% - 50px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 input[type=radio] + .label .label__check {
   display: flex;
@@ -347,6 +352,9 @@ input[type=radio]:checked + .label .label__check i {
 }
 .delay-8 {
   animation-delay: 1.2s;
+}
+.delay-9 {
+  animation-delay: 1.35s;
 }
 
 footer {

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" />
+		<link rel="stylesheet" href="../css/pages/restaurants.css" />
+		<title>Le délice des sens</title>
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+				<h1 class="logo">ohmyfood</h1>
+			</nav>
+		</header>
+		<main>
+			<header class="main-header">
+				<img
+					src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+					alt="Restaurant le délice des sens"
+				/>
+				<div class="main-header__container">
+					<h2 class="restaurant-name">Le délice des sens</h2>
+					<div class="hearts">
+						<i class="far fa-heart"></i>
+						<i class="fas fa-heart"></i>
+					</div>
+				</div>
+			</header>
+			<form>
+				<fieldset>
+					<legend>Entrées</legend>
+
+					<input type="radio" id="entree1" name="entree" />
+					<label class="label" for="entree1">
+						<span class="label__legend">
+							<span class="label__title">Tartare de thon</span>
+							<span class="label__info">Assaisonné au yuzu</span>
+							<span class="label__price">25€</span>
+						</span>
+
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="entree2" name="entree" />
+					<label class="label delay-1" for="entree2">
+						<span class="label__legend">
+							<span class="label__title">Bouchée de homard croustillant</span>
+							<span class="label__info">Et sa farandole de petits légumess</span>
+							<span class="label__price">35€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="entree3" name="entree" />
+					<label class="label delay-2" for="entree3">
+						<span class="label__legend">
+							<span class="label__title">Velouté de cèpes</span>
+							<span class="label__info">Aux truffes</span>
+							<span class="label__price">20€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Plats</legend>
+
+					<input type="radio" id="plat1" name="plat" />
+					<label class="label delay-3" for="plat1">
+						<span class="label__legend">
+							<span class="label__title">Poulet rôti aux herbes de Provence</span>
+							<span class="label__info">Et sa crème de truffe</span>
+							<span class="label__price">40€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="plat2" name="plat" />
+					<label class="label delay-4" for="plat2">
+						<span class="label__legend">
+							<span class="label__title">Langouste rôtie</span>
+							<span class="label__info">Et ses légumes de saison</span>
+							<span class="label__price">35€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="plat3" name="plat" />
+					<label class="label delay-5" for="plat3">
+						<span class="label__legend">
+							<span class="label__title">Côte de boeuf Angus</span>
+							<span class="label__info">Et sa purée de panais</span>
+							<span class="label__price">44€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Desserts</legend>
+
+					<input type="radio" id="dessert1" name="dessert" />
+					<label class="label delay-6" for="dessert1">
+						<span class="label__legend">
+							<span class="label__title">Farandole de desserts</span>
+							<span class="label__info">Du chef</span>
+							<span class="label__price">18€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="dessert2" name="dessert" />
+					<label class="label delay-7" for="dessert2">
+						<span class="label__legend">
+							<span class="label__title">Crème brulée</span>
+							<span class="label__info">Revisitée</span>
+							<span class="label__price">22€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+
+					<input type="radio" id="dessert3" name="dessert" />
+					<label class="label delay-8" for="dessert3">
+						<span class="label__legend">
+							<span class="label__title">Tiramisu</span>
+							<span class="label__info">À la noisette</span>
+							<span class="label__price">23€</span>
+						</span>
+						<span class="label__check">
+							<i class="fas fa-check-circle"></i>
+						</span>
+					</label>
+				</fieldset>
+				<button class="button">Commander</button>
+				<!-- <input type="submit" value="Commander" /> -->
+			</form>
+		</main>
+		<footer>
+			<h3 class="logo">ohmyfood</h3>
+			<ul>
+				<li>
+					<a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+				</li>
+				<li><a href="#">Mentions légales</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
