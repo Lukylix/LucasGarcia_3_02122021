@@ -1,0 +1,44 @@
+form {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: grid;
+	grid-template: auto / repeat(3, 1fr);
+	gap: 40px;
+	> .button {
+		grid-column: 1 / -1;
+		margin: 0 auto;
+	}
+}
+
+.main-header {
+	img {
+		max-height: 400px;
+	}
+	&__container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	form {
+		grid-template: auto / repeat(2, 1fr);
+		fieldset:nth-child(3) {
+			grid-column: 1 / -1;
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	form {
+		grid-template: auto / 100%;
+		fieldset {
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	}
+}
