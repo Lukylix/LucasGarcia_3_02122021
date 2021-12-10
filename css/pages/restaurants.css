@@ -107,12 +107,11 @@ body {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
 }
 .hearts i {
   position: absolute;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .hearts i:nth-child(2) {
   display: none;
@@ -135,10 +134,10 @@ body {
 
 @keyframes fill-heart {
   from {
-    transform: scale(0, 0) translateY(-125%);
+    transform: scale(0);
   }
   to {
-    transform: scale(1, 1) translateY(-50%);
+    transform: scale(1);
   }
 }
 @keyframes opacity-fade {
