@@ -1,3 +1,4 @@
+def app
 pipeline {
   agent any
   stages {
@@ -8,17 +9,20 @@ pipeline {
     }
     stage("Build") {
       steps {
-        def app = docker.build("ohmyfood")
+        script {
+          docker.build("ohmyfood")
+        }
       }
     }
     stage("Push Image") {
       steps {
-        docker.withRegistry("https://registry.iloa.dev", "registry-auth") {
-          app.push("1.0.${env.BUILD_NUMBER}");
-          app.push("latest")
+        script{
+          docker.withRegistry("https://registry.iloa.dev", "registry-auth") {
+            app.push("1.0.${env.BUILD_NUMBER}");
+            app.push("latest")
+          }
         }
       }
     }
   }
-  
 }
