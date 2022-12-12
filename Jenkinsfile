@@ -2,15 +2,10 @@ def app
 pipeline {
   agent any
   stages {
-    stage("Clone repository") {
-      steps {
-        checkout scm  
-      }
-    }
     stage("Build") {
       steps {
         script {
-          docker.build("ohmyfood")
+          app = docker.build("ohmyfood")
         }
       }
     }
